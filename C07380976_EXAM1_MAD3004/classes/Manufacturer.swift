@@ -13,7 +13,7 @@ class manufacture
     var manufacturerid: Int!
     var manufacturername: String!
     
-    init(manufacturerid: Int!, manufacturername: String!)
+    init(manufacturerid: Int, manufacturername: String)
     {
         self.manufacturerid = manufacturerid
         self.manufacturername = manufacturername

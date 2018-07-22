@@ -15,7 +15,7 @@ class product: manufacture
     var productprice: Double!
     var productquantity: Int!
     
-    init(productid:Int!, productname: String!, productprice: Double, productquantity: Int!)
+    init(manufacturerid: Int, manufacturername: String, productid:Int, productname: String, productprice: Double, productquantity: Int )
     {
         super.init(manufacturerid: manufacturerid, manufacturername: manufacturername)
     }

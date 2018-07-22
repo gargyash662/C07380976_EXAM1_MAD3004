@@ -63,12 +63,20 @@
 		D3FDA3E42103C2660058E77C /* C07380976_EXAM1_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
+				D3FDA3F42103FEC70058E77C /* classes */,
 				D3FDA3E52103C2660058E77C /* main.swift */,
-				D3FDA3EC2103F16A0058E77C /* Manufacturer.swift */,
-				D3FDA3EE2103F28B0058E77C /* Product.swift */,
-				D3FDA3F02103F3D60058E77C /* Order.swift */,
 			);
 			path = C07380976_EXAM1_MAD3004;
+			sourceTree = "<group>";
+		};
+		D3FDA3F42103FEC70058E77C /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3FDA3EE2103F28B0058E77C /* Product.swift */,
+				D3FDA3F02103F3D60058E77C /* Order.swift */,
+				D3FDA3EC2103F16A0058E77C /* Manufacturer.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

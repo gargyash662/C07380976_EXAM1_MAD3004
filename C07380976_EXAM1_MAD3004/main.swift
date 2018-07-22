@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
 
+var o1 = order(orderid: 1, orderTotal: 1, ordercompanyname: "alpha", orderdelivercompanyname: "bestbuy" )
+o1.orderId = 1
+print(o1)
