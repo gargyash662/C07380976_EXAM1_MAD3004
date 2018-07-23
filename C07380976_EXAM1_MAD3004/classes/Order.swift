@@ -12,7 +12,7 @@ class order
 {
     var orderId : Int!
     var orderDate : Date!
-    var productArray : [String]!
+    var productArray : [String] = ["macbook air", "dell", "iphone", "iPhone 8Plus 64GB" , "Hard Drive"]
     var orderTotal : Double!
     var ordercompanyname: String!
     var orderdelivercompanyname: String!
@@ -23,14 +23,13 @@ class order
         return ordeRid!
     }
     
-    init(orderid:Int,  orderTotal : Double!, ordercompanyname: String!, orderdelivercompanyname: String!   ) {
+    init(orderid:Int,  orderTotal : Double!, ordercompanyname: String!, orderdelivercompanyname: String!,orderDate : Date!) {
         self.orderId = orderid
        
         self.orderTotal = orderTotal
         self.ordercompanyname = ordercompanyname
         self.orderdelivercompanyname = orderdelivercompanyname
     }
-    
     
     
     

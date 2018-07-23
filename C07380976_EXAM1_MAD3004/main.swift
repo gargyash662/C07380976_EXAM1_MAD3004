@@ -9,6 +9,8 @@
 import Foundation
 
 
-var o1 = order(orderid: 1, orderTotal: 1, ordercompanyname: "alpha", orderdelivercompanyname: "bestbuy" )
+var o1 = order(orderid: 1, orderTotal: 1, ordercompanyname: "alpha", orderdelivercompanyname: "bestbuy", orderDate: nil  )
 o1.orderId = 1
 print(o1)
+ var order1 = order(orderid: <#T##Int#>, orderTotal: <#T##Double!#>, ordercompanyname: <#T##String!#>, orderdelivercompanyname: <#T##String!#>, orderDate: <#T##Date!#>)
+
