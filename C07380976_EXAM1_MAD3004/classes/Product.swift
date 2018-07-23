@@ -14,6 +14,7 @@ class product: manufacture
     var productname: String!
     var productprice: Double!
     var productquantity: Int!
+   
         
     var totalprice: Double
     {
@@ -22,16 +23,19 @@ class product: manufacture
     
     
     
-    init(productid:Int, productname: String, productprice: Double, productquantity: Int )
+    init(manufacturerid: Int!,manufacturername: String! ,productid:Int, productname: String, productprice: Double, productquantity: Int )
     {
         self.productid = productid
         self.productname = productname
         self.productprice = productprice
         self.productquantity = productquantity
+        super.init(manufacturerid: manufacturerid, manufacturername: manufacturername)
         
     }
     func display() {
-        print("\(productid) .....")
+        print("product details \(productid) \(productname) \(productprice) \(productquantity)")
     }
+    
+    
     
 }
