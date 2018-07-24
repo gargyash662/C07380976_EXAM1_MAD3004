@@ -8,7 +8,7 @@
 
 import Foundation
 
-class order
+class Order
 {
     var orderId : Int!
    // var orderDate : Date!
@@ -16,25 +16,32 @@ class order
     var orderTotal : Double!
     var ordercompanyname: String!
     var orderdelivercompanyname: String!
-    var productArray : [product]
+    var productArray = [product]()
+    
     func getorderbyid(ordeRid: Int) -> Int
     {
         let ordeRid = orderId
         return ordeRid!
     }
     
-    init(orderid:Int,  orderTotal : Double!, ordercompanyname: String!, orderdelivercompanyname: String!)
+    init(orderid:Int,  orderTotal : Double!, ordercompanyname: String!, orderdelivercompanyname: String!,productArray:[product])
     {
         
         self.orderId = orderid
         self.orderTotal = orderTotal
         self.ordercompanyname = ordercompanyname
         self.orderdelivercompanyname = orderdelivercompanyname
-       
+       self.productArray = productArray
     }
     
     
     
+    func display(){
+        print("\(orderId!) \(orderTotal!)\(ordercompanyname! ) \(orderdelivercompanyname!)")
+        for product in productArray {
+            product.display()
+        }
+    }
     
     
 }

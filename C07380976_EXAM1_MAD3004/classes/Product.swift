@@ -14,8 +14,10 @@ class product: manufacture
     var productname: String!
     var productprice: Double!
     var productquantity: Int!
-   
-        
+    var product = [String]()
+    var dictionary: [Int:product] = [:]
+    
+
     var totalprice: Double
     {
         return productprice*Double(productquantity)
@@ -33,7 +35,7 @@ class product: manufacture
         
     }
     func display() {
-        print("product details \(productid) \(productname) \(productprice) \(productquantity)")
+        print("product details \(productid!) \(productname!) \(productprice!) \(productquantity!)")
     }
     
     
